@@ -87,7 +87,7 @@ export default {
         const contract = await contractFactory.deploy();
 
         this.terminalContent += "\n\nHold on, we're deploying the contract";
-        await contract.deploymentTransaction().wait(2);
+        await contract.deploymentTransaction().wait(1);
 
         const address = await contract.getAddress();
         this.terminalContent +=

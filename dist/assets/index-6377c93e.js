@@ -5,7 +5,7 @@ Deploying contract with the account `+await t.getAddress(),this.terminalContent+
 
 Please sign the transaction to deploy the contract `,await this.delay(1500);const s=await r.deploy();this.terminalContent+=`
 
-Hold on, we're deploying the contract`,await s.deploymentTransaction().wait(2);const i=await s.getAddress();this.terminalContent+=`
+Hold on, we're deploying the contract`,await s.deploymentTransaction().wait(1);const i=await s.getAddress();this.terminalContent+=`
 
 The contract is deployed at `+i,this.isLoading=!1}catch(n){this.terminalContent+=`
 Error: ${n.message}`,this.isLoading=!1}},delay(n){return new Promise(t=>setTimeout(t,n))}}},_2=Ki("pre",null,`      @@@@@@ @@@       @@@@@@  @@@  @@@  @@@ @@@      @@@ @@@     
